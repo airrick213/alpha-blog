@@ -4,8 +4,12 @@
       <div class="panel panel-danger">
         <div class="panel-heading">
           <h2 class="panel-title">
-            <%= pluralize(obj.errors.count, "error") %>
-            prohibited this article from being saved:
+            <% if logged_in? %>
+              <%= pluralize(obj.errors.count, "error") %>
+                prohibited this article from being saved:
+            <% else %>
+              Please address the following issues:
+            <% end %>
           </h2>
           <div class="panel-body">
             <ul>
