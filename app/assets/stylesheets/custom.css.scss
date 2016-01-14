@@ -70,7 +70,7 @@ footer ul li {
 }
 
 .description {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .article-title {
@@ -87,5 +87,10 @@ footer ul li {
 .article-meta-details {
   border-top: 1px solid #eaeaea;
   margin-top: 15px;
+}
+
+.listing {
+  list-style: none;
+  padding-left: 0;
 }
 
